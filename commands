@@ -1,0 +1,27 @@
+less /etc/services
+docker-compose logs  --follow
+
+Open ports:
+	sudo lsof -i -P -n | grep LISTEN
+	sudo netstat -tulpn | grep LISTEN
+	sudo ss -tulpn | grep LISTEN
+	sudo lsof -i:22 ## see a specific port such as 22 ##
+	sudo nmap -sTU -O IP-address-Here
+
+grep -inr "search_string" <directory>
+sudo apt install unzip
+sudo apt install 
+
+zip -r <>.zip <directory>
+unzip <>.zip -d <directory>
+
+sudo ln -s apache-maven-3.8.1/bin/mvn /usr/local/bin/mvn
+
+docker-compose logs --follow
+docker-compose up
+docker-compose down
+docker-compose rm
+
+scp -P 2222    vagrant@127.0.0.1:/home/vagrant/dev_work/<>.zip /home/azureuser/dev_work/
+ssh -i /drives/c/Users/vnamilik/Downloads/<key_name>.pem -D 6060 azureuser@<IP>
+scp -i /drives/c/Users/vnamilik/Downloads/<key_name>.pem  azureuser@<IP>:/home/azureuser/dev_work/<>.zip  .
